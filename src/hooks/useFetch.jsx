@@ -16,7 +16,7 @@ export default function useFetch(url) {
         setLoading(true)
         const response = await axios.get(url, {
           headers: {
-            Authorization: `bearer ${import.meta.env.VITE_API_TOKEN}`,
+            Authorization: `bearer ${import.meta.env.VITE_APP_API_TOKEN}`,
           },
         });
        
